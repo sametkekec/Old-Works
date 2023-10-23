@@ -1,0 +1,24 @@
+<html>
+     <head>
+	     <meta charset="utf-8">
+		 <title>Başlıksız Belge</title>
+     </head>
+	 
+	 <body>
+	 <p>
+	     <label for="boyut">Resim Boyutunu Ayarla :</label>
+		 <input name="boyut" type="range" id="boyut" max="1000" min"100" step="50" value="100">
+	</p>
+	    <script language="javascript">
+		    
+			boyut.oninput=function(){
+			     document.getElementById("resim").style.width=boyut.value+"px";
+				 document.getElementById("resim").style.height=boyut.value+"px";
+	        }
+	    </script>
+		
+	<p><img src="images/ataturk.jpg"alt"" width="100" height="100" id="resim"/></p>
+
+	 </body>
+
+</html>

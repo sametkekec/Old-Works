@@ -1,0 +1,56 @@
+<html>
+<head>
+ 	<script language="javascript">
+		function hesapla(){
+			var not1=document.getElementById("s1").value;
+			var not2=document.getElementById("s2").value;
+			
+			var ortalama=(Number(not1)+Number(not2))/2;
+			
+			document.getElementById("ort").innerHTML=ortalama;
+			
+			if(ortalama<50)
+				{
+					document.getElementById("durum").innerHTML="<font color='red'>KALDI</font>";
+				}
+			else
+				{
+					document.getElementById("durum").innerHTML="<font color='green'>GEÇTİ</font>";
+				}
+		}
+	</script>
+</head>
+
+<body>
+<table border="1">
+		<tr>
+			<td>1.Sınav</td>
+			<td><input type="text" id="s1"></td>
+		</tr>
+		
+		<tr>
+			<td>2.Sınav</td>
+			<td><input type="text" id="s2"></td>
+		</tr>
+		
+		<tr>
+			<td></td>
+			<td><input type="button" value="hesapla" onClick="hesapla()"></td>
+		</tr>
+		
+		<tr>
+			<td>Ortalama</td>
+			<td id="ort"></td>
+		</tr>
+		
+		<tr>
+			<td>Durum</td>
+			<td id="durum"></td>
+		</tr>
+	</table>
+</body>
+
+
+
+
+</html>

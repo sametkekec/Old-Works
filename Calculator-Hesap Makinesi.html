@@ -1,0 +1,65 @@
+<html>
+<head>
+<script language="javascript">
+		function topla(){
+			var a,b;
+			
+			a=document.getElementById("s1").value;
+			b=document.getElementById("s2").value;
+			
+			var sonuc=Number(a)+Number(b);//int'e dönüştürmek için parseInt(..) de kullanılır
+			
+			document.getElementById("sonuc").innerHTML=sonuc;
+		}
+		
+		function cikart(){
+			var a,b;
+			
+			a=document.getElementById("s1").value;
+			b=document.getElementById("s2").value;
+			
+			var sonuc=Number(a)-Number(b);
+			
+			document.getElementById("sonuc").innerHTML=sonuc;
+		}
+		
+		function carpma(){
+			var a,b;
+			
+			a=document.getElementById("s1").value;
+			b=document.getElementById("s2").value;
+			
+			var sonuc=Number(a)*Number(b);
+			
+			document.getElementById("sonuc").innerHTML=sonuc;
+		}
+		
+		function bolme(){
+			var a,b;
+			
+			a=document.getElementById("s1").value;
+			b=document.getElementById("s2").value;
+			
+			var sonuc=Number(a)/Number(b);
+			
+			document.getElementById("sonuc").innerHTML=sonuc;
+		}
+	</script>
+</head>
+
+<body>
+	<input type="text" id="s1"><br><br>
+	<input type="text" id="s2"><br><br>
+	<input type="button" value="+" onClick="topla()">
+	<input type="button" value="-" onClick="cikart()">
+	<input type="button" value="*" onClick="carpma()">
+	<input type="button" value="/" onClick="bolme()">
+	
+	<p id="sonuc"></p>
+
+</body>
+
+
+
+
+</html>
